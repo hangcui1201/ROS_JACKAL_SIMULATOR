@@ -8,7 +8,11 @@ $ roslaunch jackal_gazebo jackal_world.launch
 $ roslaunch jackal_viz view_robot.launch  
 
 #### Gazebo and Rviz with Laser Scanner
-$ roslaunch jackal_gazebo jackal_world.launch   config:=front_laser  
+$ roslaunch jackal_gazebo jackal_world.launch config:=front_laser  
 $ roslaunch jackal_viz view_robot.launch  
 
+#### Navigation without Map
+$ roslaunch jackal_gazebo jackal_world.launch config:=front_laser  
+$ roslaunch jackal_drive_indoors odom_navigation_without_map.launch  
+$ roslaunch jackal_viz view_robot.launch config:=navigation_without_map  
 
